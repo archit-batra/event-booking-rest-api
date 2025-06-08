@@ -1,4 +1,4 @@
-module github.com/archit-batra/rest-api
+module github.com/archit-batra/event-booking-rest-api
 
 go 1.24.3
 
