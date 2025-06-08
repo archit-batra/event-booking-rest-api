@@ -3,11 +3,13 @@ package main
 import (
 	"net/http"
 
+	"github.com/archit-batra/event-booking-rest-api/db"
 	"github.com/archit-batra/event-booking-rest-api/models"
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
+	db.InitDB()
 	server := gin.Default()
 
 	server.GET("/events", getEvents) // GET, POST, PUT, PATCH, DELETE
